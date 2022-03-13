@@ -1,0 +1,24 @@
+.appArea{
+  max-width: 1600px;
+  margin:  50px auto ;
+}
+.navList{
+  width:300px;
+  height:800px;
+  line-height:50px;
+  padding:20px;
+  border:2px blue solid;
+  margin-right:10px;
+  float:left;
+}
+.contentArea{
+  width:1200px;
+  height:800px;
+  padding:20px;
+  margin-right:10px;
+  float:left;
+}
+
+.matList{
+  color: black;
+}

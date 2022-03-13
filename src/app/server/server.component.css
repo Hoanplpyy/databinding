@@ -1,0 +1,11 @@
+.mat-grid-tile {
+  border: solid 2px #000;
+}
+.subTopic{
+  max-width: 480px;
+  margin:10px auto;
+  line-height: 25px;
+}
+p{
+  font-size: 20px;
+}

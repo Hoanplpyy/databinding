@@ -1,0 +1,54 @@
+<mat-grid-list cols="2" rowHeight="2:1">
+  <mat-grid-tile>
+    <div class="subTopic">
+
+      <!-- Text interpolation -->
+      <h1>Text interpolation</h1>
+      <p>{{'Server'}} with ID {{serverID}} is {{serverStatus}}</p>
+
+      <p>{{'Server'}} with ID {{serverID}} is {{getServerStatus()}}</p>
+
+    </div>
+  </mat-grid-tile>
+
+  <mat-grid-tile>
+    <div class="subTopic">
+      <!-- property binding -->
+      <h1>Property binding</h1>
+
+      <button class="btn btn-primary"  [disabled]="!allowNewServer">Add server</button>
+      <p>{{serverID}}</p>
+
+    </div>
+  </mat-grid-tile>
+
+  <mat-grid-tile>
+    <div class="subT施opic">
+      <!-- event binding -->
+      <h1>Event binding</h1>
+
+      <button class="btn btn-primary" id="serverBtn" (click)="onCreateServer()"  [disabled]="!allowNewServer">Add server</button>
+      <p>{{serverCreateStatus}}</p>
+
+    </div>
+  </mat-grid-tile>
+
+  <mat-grid-tile>
+    <div class="subTopic">
+      <!-- two-way binding -->
+      <h1>Two-way binding</h1>
+      <p>Event</p>
+      <input type="text" class="form-control" (input)="onUpdateServerName($event)">
+      <p>{{serverTraName}}</p>
+
+      <p>Two-way binding</p>
+      <input type="text" class="form-control" [(ngModel)]="serverName">
+      <p>{{serverName}}</p>
+
+
+
+    </div>
+  </mat-grid-tile>
+
+</mat-grid-list>
+

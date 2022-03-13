@@ -1,0 +1,15 @@
+
+<h3>Use Input decorator</h3>
+<p>Get data ( [item]="currentItem" currentItem=Television ) from parent component</p>
+<p>
+In child component :
+</p>
+<p class="childItem"> Today's item: {{item}}</p>
+
+<hr>
+
+<h3>Use Output decorator</h3>
+<label for="item-input">Add an item:</label>
+<input type="text" id="item-input" #newItem>
+<button type="button" (click)="addNewItem(newItem.value)">Add to parent's list</button>
+

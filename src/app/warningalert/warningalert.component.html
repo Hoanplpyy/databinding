@@ -1,0 +1,15 @@
+<h1>Sharing data between child and parent directives and components</h1>
+<h2>Show two-way binding example</h2>
+<h3>Parent: warningalert.component ;  </h3>
+<h3>Child: child.component;</h3>
+<hr>
+
+<app-child [(item)]="currentItem" (newItemEvent)="addItem($event)"></app-child>
+
+<p>In parent component</p>
+<ul>
+  <li *ngFor="let item of items">{{item}}</li>
+</ul>
+
+
+<app-childshowio [(name)]="name"></app-childshowio>
