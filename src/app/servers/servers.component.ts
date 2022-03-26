@@ -3,15 +3,30 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-servers',
   templateUrl: './servers.component.html',
-  styleUrls: ['./servers.component.css']
+  styles:[`
+  .online{
+    color:white;
+  }
+  `]
 })
 export class ServersComponent implements OnInit {
 
- Code: string = '<button id="serverButton" class="btn btn-primary" [disabled]="allowNewServer">Add server</button>';
+  serverID: number = 10;
+  serverStatus: string = 'offline';
 
   constructor() {
+    this.serverStatus = Math.random() > 0.5 ? 'offline' : 'online'
   }
 
   ngOnInit(): void {
+
+  }
+
+  getServerStatus() {
+    return this.serverStatus;
+  }
+
+  getColor() {
+    return this.serverStatus === 'online' ? 'green' : 'red'
   }
 }

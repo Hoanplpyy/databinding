@@ -1,0 +1,46 @@
+<div class="container container_height">
+  <div class="row">
+    <div class="col-xs-12">
+      <h2>{{selfCompanyName}}客戶資料</h2>
+    </div>
+  </div>
+  <hr>
+  <div class="row">
+    <div class="col-1">
+      <p>No.</p>
+    </div>
+    <div class="col-4">
+      <p>公司名稱</p>
+    </div>
+    <div class="col-2">
+      <p>電話號碼</p>
+    </div>
+    <div class="col-5">
+      <p>地址 </p>
+    </div>
+  </div>
+  <div class="row border listArea" style="break-before: always;" *ngFor="let data of listData ; let i = index">
+    <div class="col-1">
+      <p>{{data.no}}</p>
+    </div>
+    <div class="col-4">
+      <p>{{data.name}}</p>
+    </div>
+    <div class="col-2">
+      <p>{{data.phone}}</p>
+    </div>
+    <div class="col-5">
+      <p>{{data.address}}</p>
+    </div>
+    <div class="breakPoint" style="break-before: always;"></div>
+  </div>
+  <div class="row d-print-none" >
+    <div class="col-xs 12">
+      <div class="btn-group">
+        <button class="btn btn-primary" (click)="printPage()">
+          列印
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

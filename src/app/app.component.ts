@@ -21,6 +21,14 @@ export class AppComponent {
       className:'Directives',
       url:'/successalert'
     },
+    {
+      className:'Directives Homework',
+      url:'/directivesHomework'
+    },
+    {
+      className:'Print break point',
+      url:'/BreakPoint'
+    },
 
   ]
 

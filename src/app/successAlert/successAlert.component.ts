@@ -14,6 +14,11 @@ export class SuccessAlertComponent implements OnInit {
   serverCreated: boolean = false;
   serverCreateStatus = "Server is not created"
   allowNewServer = false;
+  servers=['testServer','testServer2']
+
+  constructor(){
+
+  }
 
   ngOnInit(): void {
     setTimeout(() => {
@@ -24,6 +29,7 @@ export class SuccessAlertComponent implements OnInit {
 
   onCreateServer() {
     this.serverCreateStatus = "Server is created";
+    this.servers.push(this.serverName)
     this.serverCreated = true;
   }
 

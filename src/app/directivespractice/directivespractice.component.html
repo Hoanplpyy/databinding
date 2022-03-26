@@ -1,0 +1,6 @@
+<p>directivespractice works!</p>
+
+<button class="btn btn-primary" (click)="onChangeDisplay()">Display details</button>
+<p *ngIf="isSecret">Secret Password:Tuna</p>
+<p *ngFor="let count of clickCounts" [ngStyle]="{backgroundColor:getBGColor(count)}"
+[ngClass]="{online:clicks>5}">Button click count number is : {{clickCount}}</p>

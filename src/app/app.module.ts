@@ -14,6 +14,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SharedModule } from './services/shared/shared.module';
 import { ChildComponent } from './warningalert/child/child.component';
 import { ChildshowioComponent } from './warningalert/childshowio/childshowio.component';
+import { DirectivespracticeComponent } from './directivespractice/directivespractice.component';
+import { BreakPointComponent } from './break-point/break-point.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { ChildshowioComponent } from './warningalert/childshowio/childshowio.com
     SuccessAlertComponent,
     ServersComponent,
     ChildComponent,
-    ChildshowioComponent
+    ChildshowioComponent,
+    DirectivespracticeComponent,
+    BreakPointComponent
   ],
   imports: [
     BrowserModule,
