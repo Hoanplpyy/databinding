@@ -16,6 +16,9 @@ import { ChildComponent } from './warningalert/child/child.component';
 import { ChildshowioComponent } from './warningalert/childshowio/childshowio.component';
 import { DirectivespracticeComponent } from './directivespractice/directivespractice.component';
 import { BreakPointComponent } from './break-point/break-point.component';
+import { ClassFiveComponent } from './class-five/class-five.component';
+import { CockpitComponent } from './class-five/cockpit/cockpit.component';
+import { ServerElementComponent } from './class-five/server-element/server-element.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +30,10 @@ import { BreakPointComponent } from './break-point/break-point.component';
     ChildComponent,
     ChildshowioComponent,
     DirectivespracticeComponent,
-    BreakPointComponent
+    BreakPointComponent,
+    ClassFiveComponent,
+    CockpitComponent,
+    ServerElementComponent,
   ],
   imports: [
     BrowserModule,

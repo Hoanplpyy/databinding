@@ -1,5 +1,5 @@
+import { ClassFiveComponent } from './class-five/class-five.component';
 import { DirectivespracticeComponent } from './directivespractice/directivespractice.component';
-import { ServersComponent } from './servers/servers.component';
 import { WarningalertComponent } from './warningalert/warningalert.component';
 import { SuccessAlertComponent } from './successAlert/successAlert.component';
 import { ServerComponent } from './server/server.component';
@@ -16,6 +16,9 @@ const routes: Routes = [
       { path: 'warningalert', component: WarningalertComponent },
       { path: 'directivesHomework', component: DirectivespracticeComponent },
       { path: 'BreakPoint', component: BreakPointComponent },
+      { path: 'classfive', component: ClassFiveComponent },
+
+
     ]
   },
 

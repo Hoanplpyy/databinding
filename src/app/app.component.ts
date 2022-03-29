@@ -29,6 +29,11 @@ export class AppComponent {
       className:'Print break point',
       url:'/BreakPoint'
     },
+    {
+      className:'Class5',
+      url:'/classfive'
+    },
+
 
   ]
 
