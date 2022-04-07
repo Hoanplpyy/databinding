@@ -4,7 +4,7 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
   selector: 'app-class-five',
   templateUrl: './class-five.component.html',
   styleUrls: ['./class-five.component.css'],
-//  encapsulation:ViewEncapsulation.ShadowDom
+  // encapsulation:ViewEncapsulation.ShadowDom
 })
 export class ClassFiveComponent implements OnInit {
 
