@@ -9,13 +9,20 @@
   <div class="row">
     <div class="col-xs-12">
       <app-server-element *ngFor="let serverElement of serverElements"
-      [element]="serverElement"></app-server-element>
+      [element]="serverElement">
+
+      <p class="card-text">
+        <em *ngIf="serverElement.type === 'server'" style="color: red">{{ serverElement.content }}</em>
+        <em *ngIf="serverElement.type === 'blueprint'">{{ serverElement.content }}</em>
+      </p>
+
+    </app-server-element>
     </div>
   </div>
-  <div class="row">
+  <!-- <div class="row">
     <p>In classfive component</p>
     <label>In classfive.html ==> Label for testing that dose child css affect parent view? </label>
-  </div>
+  </div> -->
   <!-- <div class="row">
     <button
       class="btn btn-primary">Test style in parent component
