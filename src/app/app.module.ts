@@ -19,6 +19,10 @@ import { BreakPointComponent } from './break-point/break-point.component';
 import { ClassFiveComponent } from './class-five/class-five.component';
 import { CockpitComponent } from './class-five/cockpit/cockpit.component';
 import { ServerElementComponent } from './class-five/server-element/server-element.component';
+import { ClassFiveHomeworkComponent } from './class-five-homework/class-five-homework.component';
+
+import { OddComponent } from './class-five-homework/odd/odd.component';
+import { EvenComponent } from './class-five-homework/even/even.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +38,9 @@ import { ServerElementComponent } from './class-five/server-element/server-eleme
     ClassFiveComponent,
     CockpitComponent,
     ServerElementComponent,
+    ClassFiveHomeworkComponent,
+    OddComponent,
+    EvenComponent,
   ],
   imports: [
     BrowserModule,

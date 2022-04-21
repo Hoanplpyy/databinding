@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="row">
+    <h1>Class five homework</h1>
+  </div>
+  <div class="row">
+    <div class="col-sm">
+      <button class="btn btn-primary" (click)="onStartGame()">
+        Start Game
+      </button>
+    </div>
+    <div class="col-sm">
+      <button class="btn btn-danger" (click)="onStopGame()">
+        Stop Game
+      </button>
+    </div>
+  </div>
+
+  <div class="row" *ngFor="let gameCount of startGameCount">
+
+      <app-odd [counts]="gameCount"></app-odd>
+
+      <app-even [counts]="gameCount"></app-even>
+
+  </div>
+
+
+
+
+</div>

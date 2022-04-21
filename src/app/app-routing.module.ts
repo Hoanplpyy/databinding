@@ -1,3 +1,4 @@
+import { ClassFiveHomeworkComponent } from './class-five-homework/class-five-homework.component';
 import { ClassFiveComponent } from './class-five/class-five.component';
 import { DirectivespracticeComponent } from './directivespractice/directivespractice.component';
 import { WarningalertComponent } from './warningalert/warningalert.component';
@@ -17,6 +18,7 @@ const routes: Routes = [
       { path: 'directivesHomework', component: DirectivespracticeComponent },
       { path: 'BreakPoint', component: BreakPointComponent },
       { path: 'classfive', component: ClassFiveComponent },
+      { path: 'classfiveHomework', component: ClassFiveHomeworkComponent },
 
 
     ]

@@ -33,6 +33,10 @@ export class AppComponent {
       className:'Class5',
       url:'/classfive'
     },
+    {
+      className:'Class5-homework',
+      url:'/classfiveHomework'
+    },
 
 
   ]
